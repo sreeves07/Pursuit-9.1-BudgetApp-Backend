@@ -1,7 +1,7 @@
 const express = require("express")
 const budget = express.Router()
 
-const budgetArray = require("../models/budget")
+const budgetArray = require("../models/transactions")
 
 budget.get("/", (req, res) => {
     res.json(budgetArray)
